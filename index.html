@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sidebar Menu</title>
+    <link rel="shortcut icon" href="cat.png" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="sidebar">
+      <div class="top">
+        <div class="logo">
+          <i class="bx bxl-codepen"></i>
+          <span>Sidebar</span>
+        </div>
+        <i class="bx bx-menu" id="btn"></i>
+      </div>
+      <div class="user">
+        <img src="./159694422.jpeg" alt="logo" class="user-img" />
+        <div>
+          <p class="bold">Jahin Utsho</p>
+          <p>Admin</p>
+        </div>
+      </div>
+      <ul>
+        <li>
+          <a href="#Dashboard">
+            <i class="bx bxs-grid-alt"></i>
+            <span class="nav-item">Dashboard</span>
+          </a>
+          <div class="tooltip">Dashboard</div>
+        </li>
+        <li>
+          <a href="#Products">
+            <i class="bx bxs-shopping-bag"></i>
+            <span class="nav-item">Products</span>
+          </a>
+          <div class="tooltip">Products</div>
+        </li>
+        <li>
+          <a href="#Category">
+            <i class="bx bx-list-check"></i>
+            <span class="nav-item">Category</span>
+          </a>
+          <div class="tooltip">Category</div>
+        </li>
+        <li>
+          <a href="#Orders">
+            <i class="bx bx-food-menu"></i>
+            <span class="nav-item">Orders</span>
+          </a>
+          <div class="tooltip">Orders</div>
+        </li>
+        <li>
+          <a href="#Customers">
+            <i class="bx bx-body"></i>
+            <span class="nav-item">Customers</span>
+          </a>
+          <div class="tooltip">Customers</div>
+        </li>
+        <li>
+          <a href="#Shipping">
+            <i class="bx bx-location-plus"></i>
+            <span class="nav-item">Shipping</span>
+          </a>
+          <div class="tooltip">Shipping</div>
+        </li>
+        <li>
+          <a href="#Settings">
+            <i class="bx bx-cog"></i>
+            <span class="nav-item">Settings</span>
+          </a>
+          <div class="tooltip">Settings</div>
+        </li>
+        <li>
+          <a href="">
+            <i class="bx bx-log-out"></i>
+            <span class="nav-item">Logout</span>
+          </a>
+          <div class="tooltip">Logout</div>
+        </li>
+      </ul>
+    
+    </div>
+    
+    <section class="Dashboard" id="Dashboard">Dashboard</section>
+    <section class="Products" id="Products">Products</section>
+    <section class="Category" id="Category">Category</section>
+    <section class="Orders" id="Orders">Orders</section>
+    <section class="Customers" id="Customers">Customers</section>
+    <section class="Shipping" id="Shipping">Shipping</section>
+    <section class="Settings" id="Settings">Settings</section>
+      
+  </body>
+  <script>
+    let btn = document.querySelector('#btn');
+    let sidebar = document.querySelector('.sidebar');
+
+    btn.onclick = function () {
+      sidebar.classList.toggle('active');
+    };
+  </script>
+</html>
